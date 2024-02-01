@@ -14,7 +14,7 @@ public class KadaiFirstController {
         int dWeek = 0;
         String week = null;
         Calendar cal = Calendar.getInstance();
-        cal.set(Integer.parseInt(day.substring(0,4)),Integer.parseInt(day.substring(4,6)),Integer.parseInt(day.substring(6,8)));
+        cal.set(Integer.parseInt(day.substring(0,4)),Integer.parseInt(day.substring(4,6))-1,Integer.parseInt(day.substring(6,8)));
         dWeek = cal.get(Calendar.DAY_OF_WEEK);
         if (dWeek == 1) {
             week = "Sunday";
